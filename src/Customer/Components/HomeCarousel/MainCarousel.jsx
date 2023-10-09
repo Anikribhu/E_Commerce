@@ -6,7 +6,7 @@ import 'react-alice-carousel/lib/alice-carousel.css'
 const MainCarousel = () => {
 
     const items = MainCarouselData.map((item)=> <img 
-className="cursor-pointer" role="presentation"
+className="cursor-pointer -z-10" role="presentation"
  src={item.image} alt=""/>)
 
 
@@ -16,7 +16,7 @@ className="cursor-pointer" role="presentation"
         items={items}
         disableButtonsControls
         autoPlay
-        autoPlayInterval={2000}
+        autoPlayInterval={4000}
         infinite
     />
   )

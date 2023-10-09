@@ -1,14 +1,22 @@
 
 import './App.css';
-import Navigation from './Customer/Components/Navigation';
+import Footer from './Customer/Components/Footer/Footer';
+import Navigation from './Customer/Components/Navigation/Navigation';
+
 import HomePage from './Customer/Components/Pages/HomePage';
+import Product from './Customer/Components/Product/Product';
 
 function App() {
   return (
-    <div className="App">
-      <Navigation/>
-      <div><HomePage/></div>
-    </div>
+    <>
+      <div className="App">
+        <Navigation/>
+        {/* <HomePage/> */}
+        <Product/>
+        <Footer/>
+      </div>
+    </>
+    
   );
 }
 
